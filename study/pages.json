@@ -1,0 +1,70 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style" : {}
+		},{
+            "path" : "pages/welfare/welfare",
+            "style" : {}
+        },{
+            "path" : "pages/news/news",
+            "style" : {}
+        },{
+            "path" : "pages/welfare/second/1",
+            "style" : {}
+        },{
+		    "path" : "pages/welfare/second/2",
+		    "style" : {}
+		},{
+		    "path" : "pages/news/info1",
+		    "style" : {}
+		},{
+		    "path" : "pages/read/read",
+		    "style" : {}
+		}
+        ,{
+            "path" : "pages/welfare/second/3",
+            "style" : {
+				// "navigationStyle":"custom"
+			}
+        }
+        ,{
+            "path" : "pages/welfare/second/4",
+            "style" : {
+			}
+        }
+    ],
+	"tabBar": {
+		"color": "#7a7e83",
+		"selectedColor": "#0faeff",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/welfare/welfare",
+			"text": "福利",
+			"iconPath": "static/liwu.png",
+			"selectedIconPath": "static/liwu-hover.png"
+		}, {
+			"pagePath": "pages/index/index",
+			"text": "首页",
+			"iconPath": "static/home.png",
+			"selectedIconPath": "static/homeHL.png"
+		}, {
+			"pagePath": "pages/read/read",
+			"text": "免费阅读",
+			"iconPath": "static/book.png",
+			"selectedIconPath": "static/book-hover.png"
+		},{
+			"pagePath": "pages/news/news",
+			"text": "新闻",
+			"iconPath": "static/xinwen.png",
+			"selectedIconPath": "static/xinwen-hover.png"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "微信读书",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+		// "navigationStyle":"custom"
+	}
+}

@@ -1,0 +1,1 @@
+<view><view style="{{'height:'+(getHeight)+';'+('padding:'+(padding)+';')}}"><view style="text-align:center;font-weight:bold;font-size:30rpx;margin:15rpx 0;">{{title}}</view><view style="text-indent:2em;overflow-x:hidden;"><rich-text style="font-size:25rpx;" nodes="{{nr}}"></rich-text></view></view></view>

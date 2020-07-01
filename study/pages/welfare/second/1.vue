@@ -1,0 +1,227 @@
+<template>
+	<view>
+		<swiper :style="{height:getheight}" style="width: 100%;">
+			<swiper-item>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+			</swiper-item>
+			<swiper-item>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+			</swiper-item>
+			<swiper-item>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+			</swiper-item>
+			<swiper-item>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+			</swiper-item>
+			<swiper-item>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+				<view>12</view>
+			</swiper-item>
+		</swiper>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			
+		},
+		computed:{
+			getheight(){
+				var gd;
+				uni.getSystemInfo({
+					success: (res) => {
+						gd=res.windowHeight+'px';
+					}
+				})
+				return gd;
+			}
+		},
+		onShow() {
+			console.log(this.getheight)
+			uni.request({
+				url:"https://unidemo.dcloud.net.cn/api/news",
+				method:"GET",
+				success: (res) => {
+					console.log(res)
+				}
+			})
+		}
+	}
+</script>
+
+<style>
+	swiper-item{
+		width: 100%;
+		height: auto;
+		overflow-y: scroll;
+	}
+	swiper-item view{
+		margin: 30rpx 0;
+		
+	}
+</style>
